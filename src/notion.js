@@ -7,7 +7,7 @@ const
 
 
 //check if there is a post in queue and post it if there is one
-const checkStatus = async () => {
+export const checkStatus = async () => {
     const response = await notion.databases.query({
         database_id: dbID,
         filter: {
@@ -21,7 +21,7 @@ const checkStatus = async () => {
 }
 
 //change the status of the post to posted
-const changeStatus = async (id) => {
+export const changeStatus = async (id) => {
     const response = await notion.pages.update({
         page_id: id,
         properties: {
@@ -35,5 +35,3 @@ const changeStatus = async (id) => {
 
     console.log(response)
 }
-
-checkStatus().then((response) => changeStatus(response));

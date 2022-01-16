@@ -1,9 +1,8 @@
 {
   "name": "twitter-notion",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,11 +11,18 @@
   "license": "MIT",
   "dependencies": {
     "@notionhq/client": "^0.4.12",
+    "axios": "^0.24.0",
+    "cookie-parser": "^1.4.6",
     "crypto": "^1.0.1",
+    "dotenv": "^12.0.4",
     "express": "^4.17.2",
+    "express-session": "^1.17.2",
     "got": "^12.0.1",
+    "needle": "^3.0.0",
+    "oauth": "^0.9.15",
     "oauth-1.0a": "^2.2.6",
     "querystring": "^0.2.1",
+    "request-promise": "^4.2.6",
     "twitter-api-v2": "^1.9.1",
     "twitter.js": "^0.10.1"
   }
