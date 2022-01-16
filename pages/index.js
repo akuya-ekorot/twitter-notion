@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { prepareAuthUrl } from "../lib/prepareAuthUrl";
+import prepareAuthUrl from "../lib/prepareAuthUrl";
 
 export default function Home() {
   const url = prepareAuthUrl();
